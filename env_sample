@@ -1,0 +1,15 @@
+GN_CLIENT_ID =
+GN_CLIENT_SECRET =
+GN_ENDPOINT = 'https://api-pix-h.gerencianet.com.br'
+GN_CERT_H =
+GN_CERT_P =
+
+
+EXPO_ACCESS_TOKEN = 
+
+
+DB_HOST = 
+DB_USER = 
+DB_PASSWORD = 
+DB_SCHEMA = 
+JWT_KEY = 

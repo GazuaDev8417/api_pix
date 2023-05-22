@@ -1,0 +1,217 @@
+GET http://localhost:3003/clients
+
+###
+
+POST http://localhost:3003/client/signup
+Content-Type: application/json
+
+{
+    "name": "Flamarion",
+    "email": "mesmo@gmail.com",
+    "password": "123456"
+}
+
+###
+
+post http://localhost:3003/client/login
+Content-Type: application/json
+
+{
+    "email": "mesmo245@gmail.com",
+    "password": "123456"
+}
+
+###
+
+POST http://localhost:3003/signup
+Content-Type: application/json
+
+{
+    "name": "Visitante",
+    "email": "visitante@gmail.com",
+    "password": "123456"
+}
+
+###
+
+post http://localhost:3003/login
+Content-Type: application/json
+
+{
+    "email": "visitante@gmail.com",
+    "password": "123456"
+}
+
+###
+
+GET https://gerencianet.vercel.app/products
+
+###
+
+GET http://localhost:3003/client/userlistcob
+
+###
+
+GET http://localhost:3003/cart/8f9b86a4-c55d-4675-800d-fc48b71f7fd5
+
+###
+
+GET http://localhost:3003/products/247b14e7-75ea-4a69-8a9f-fe5547a53659
+
+###
+
+POST http://localhost:3003/products
+Content-Type: application/json
+
+{
+    "nome": "Calça",
+    "preco": 10,
+    "clientId": "18ea4e1e-4c7c-4d44-b11b-1e3122542d24"
+}
+
+###
+
+POST http://localhost:3003/cart
+Content-Type: application/json
+
+{
+    "nome": "Calça",
+    "preco": 100
+}
+
+###
+
+DELETE http://localhost:3003/products/67a4e8cb-db66-4bd1-9d62-b821b399a578
+
+###
+DELETE http://localhost:3003/cart/123
+
+###
+
+POST http://localhost:3003/qrcode
+Content-Type: application/json
+
+{
+    "valor": "100.00",
+    "criacao": "19/03/2023",
+    "userId": "44a15816-3d85-4673-953e-0e6675fe0112"
+}
+
+###
+
+POST http://localhost:3003/cob
+Content-Type: application/json
+
+{
+    "valor": "22.00",
+    "msg": " "
+}
+
+###
+
+GET http://localhost:3003/consultcob/25f3fc00d52049469747f266f071c28d
+
+###
+
+GET http://localhost:3003/client/cob/2fee71ddc26446518c7be582a95a0803
+
+###
+
+PATCH http://localhost:3003/editcob
+Content-Type: application/json
+
+{
+    "valor": "30.00",
+    "txid": "d7dcc8230a124882abd27462473c2abe"
+}
+
+###
+POST https://gerencianet-production.up.railway.app/client/listcob
+Content-Type: application/json
+
+{
+    "inicio": "18/01/2023",
+    "fim": "20/03/2023"
+}
+
+###
+
+POST http://localhost:3003/listcob
+Content-Type: application/json
+
+{
+    "userId": "44a15816-3d85-4673-953e-0e6675fe0112"
+}
+
+###
+
+POST  https://gerencianet-production.up.railway.app/listpix
+Content-Type: application/json
+
+{
+    "inicio": "01/01/2023",
+    "fim": "11/03/2023"
+}
+
+###
+
+POST http://localhost:3003/pixsent
+Content-Type: application/json
+
+{
+    "inicio": "10/03/2023",
+    "fim": "18/03/2023"
+}
+
+###
+
+GET http://localhost:3003/pix/E09089356202303181856c0cec469978
+
+###
+
+GET http://localhost:3003/pixrcb/E22896431202303111934VfAU9Sfob49
+
+###
+
+GET http://localhost:3003/balance
+
+###
+
+GET http://localhost:3003/user/image/8f9b86a4-c55d-4675-800d-fc48b71f7fd5
+
+###
+
+POST http://localhost:3003/notification/58e493fb-768c-482e-b03e-246b50c02142
+Content-Type: application/json
+
+{
+    "title": "Titulo",
+    "body": "Corpo da mensagem"
+}
+
+###
+
+POST http://localhost:3003/notifications
+Content-Type: application/json
+
+{
+    "title": "Titulo",
+    "body": "Notificação para vários usuários"
+}
+
+###
+
+PATCH http://localhost:3003/client/pushtoken/58e493fb-768c-482e-b03e-246b50c02142
+Content-Type: application/json
+
+{
+    "expoPushToken": "ExponentPushToken[gP1UlFA6suNooyHgVMaGGW]"
+}
+
+###
+PATCH http://localhost:3003/client/editcob/25f3fc00d52049469747f266f071c28d
+Content-Type: application/json
+
+{
+    "valor": "5.00"
+}
